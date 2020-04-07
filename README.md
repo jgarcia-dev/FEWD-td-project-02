@@ -1,2 +1,2 @@
-# FEWD-td-project-02
+# Front End Web Development Techdegree Project 2
  Mobil-first Responsive Layout
