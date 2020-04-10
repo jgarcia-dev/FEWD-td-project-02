@@ -1,0 +1,143 @@
+/* Google fonts import --------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;800&display=swap');
+
+/* ==================================================================== 
+Base Element Styles
+=======================================================================*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Muli', Arial, sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    color: #777;
+}
+
+h1 {
+    color: #4a4a4a;
+    padding: 30px 0;
+}
+
+h2 {
+    font-size: 1.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 60px 0;
+}
+
+h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 15px 0;
+}
+
+p {
+    padding: 10px 0;
+    line-height: 1.5em;
+}
+
+a {
+    color: #4a4a4a;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+hr {
+   border: 1px solid #e6e6e6;
+}
+
+/* ==================================================================== 
+Base Layout Styles
+=======================================================================*/
+
+/* Layout Header ----------------------------------*/
+.nav-container,
+.banner-container {
+    padding-bottom: 50px;
+}
+
+/* Layout Navigation ------------------------------*/
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    background-color: #fff;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+/* Layout Containers ------------------------------*/
+header,
+main,
+footer {
+    padding: 0 25px;
+    text-align: center;
+}
+
+header,
+footer {
+    background-color:#fafafa;
+}
+
+.feat-card {
+    margin-bottom: 80px;
+}
+
+.contact-container, 
+.footer-links-container {
+    padding: 25px 0;
+    margin-bottom: 20px;
+}
+
+/* Page Elements ------------------------------*/
+.profile-pic {
+    max-width: 70%;
+    margin-bottom: 20px;
+}
+
+.feat-img {
+    max-width: 100%;
+    padding-bottom: 10px;
+}
+
+.contact-info {
+    color: #8b8b8b;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-left: 30px;
+}
+
+.footer-link-label {
+    color: #4a4a4a;
+    font-weight: 800;
+    font-size: 1.4rem;
+    float: left;
+}
+
+.footer-link {
+    color: #4a4a4a;
+    font-weight: 800;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    float: right;
+}
+
+/* Clearfix ----------------------------------*/
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* ==================================================================== 
+Media Queries
+=======================================================================*/
