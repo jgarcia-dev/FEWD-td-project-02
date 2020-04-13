@@ -12,9 +12,13 @@ Base Element Styles
 
 body {
     font-family: 'Muli', Arial, sans-serif;
-    font-size: 1.1rem;
-    letter-spacing: 0.1rem;
     color: #777;
+}
+
+header a {
+    color: #4a4a4a;
+    text-decoration: none;
+    font-weight: 800;
 }
 
 h1 {
@@ -23,14 +27,13 @@ h1 {
 }
 
 h2 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-align: center;
     text-transform: uppercase;
-    padding: 60px 0;
+    padding: 50px 0;
 }
 
 h3 {
-    font-size: 1.8rem;
     text-align: center;
     padding: 15px 0;
 }
@@ -40,30 +43,28 @@ p {
     line-height: 1.5em;
 }
 
-a {
-    color: #4a4a4a;
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: 800;
-}
-
 hr {
    border: 1px solid #e6e6e6;
+}
+
+footer a {
+    text-decoration: none;
 }
 
 /* ==================================================================== 
 Base Layout Styles
 =======================================================================*/
 
-/* Layout Header ----------------------------------*/
+/* Layout Header ------------------------------------------------------*/
 .nav-container,
 .banner-container {
     padding-bottom: 50px;
 }
 
-/* Layout Navigation ------------------------------*/
+/* Layout Navigation --------------------------------------------------*/
 nav ul {
     list-style-type: none;
+    padding-left: 0;
 }
 
 nav a {
@@ -74,11 +75,45 @@ nav a {
     margin-bottom: 10px;
 }
 
-/* Layout Containers ------------------------------*/
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
+    float: right;
+}
+
+footer li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.footer-name {
+    color: #4a4a4a;
+    font-weight: 800;
+    float: left;
+}
+
+.footer-link {
+    color: #4a4a4a;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* For displaying and hiding footer links */
+.mobile {
+    display: inline-block;
+}
+
+.not-mobile {
+    display: none;
+}
+/* --------------------------------------- */
+
+
+/* Layout Containers -------------------------------------------------*/
 header,
 main,
 footer {
-    padding: 0 25px;
+    padding: 0 15px;
     text-align: center;
 }
 
@@ -87,15 +122,16 @@ footer {
     background-color:#fafafa;
 }
 
-.feat-card {
-    margin-bottom: 80px;
+.feat-container {
+   
 }
 
 .contact-container, 
 .footer-links-container {
-    padding: 25px 0;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
+
 
 /* Page Elements ------------------------------*/
 .profile-pic {
@@ -105,29 +141,19 @@ footer {
 
 .feat-img {
     max-width: 100%;
-    padding-bottom: 10px;
+}
+
+.feat-text {
+    padding-bottom: 50px;
+}
+
+.contact-label {
+    margin-right: 20px;
 }
 
 .contact-info {
     color: #8b8b8b;
-    font-size: 1.5rem;
     font-weight: 800;
-    margin-left: 30px;
-}
-
-.footer-link-label {
-    color: #4a4a4a;
-    font-weight: 800;
-    font-size: 1.4rem;
-    float: left;
-}
-
-.footer-link {
-    color: #4a4a4a;
-    font-weight: 800;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    float: right;
 }
 
 /* Clearfix ----------------------------------*/
@@ -141,3 +167,48 @@ footer {
 /* ==================================================================== 
 Media Queries
 =======================================================================*/
+@media (min-width: 768px) {
+    header,
+    main,
+    footer {
+        padding: 0 30px;
+    }
+    
+    .banner-container p {
+        text-align: left;
+        padding-left: 10px;
+
+    }
+    
+    .profile-pic {
+        max-width: 40%;
+        float: right;
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+
+    nav a,
+    nav li {
+        display: inline-block;
+        background-color:#fafafa;
+    }
+    
+    p {
+        font-size: 1.3rem;
+    }
+
+    .feat-container {
+        max-width: 50%;
+        float: right;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .not-mobile {
+        display: inline-block;
+    }
+}
