@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@400;800&display=swap">
     <link rel="stylesheet" href="css/style.css">
     <title>Student Name - Front-end Developer</title>
 </head>
 <body>
-    <header>
-        <div class="nav-container">
+    <header id="top">
+        <div class="nav-container clearfix">
             <h1>Student Name</h1>
             <nav>
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#top">HOME</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -23,7 +24,7 @@
             <p>Hi! I’m a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skill to use!</p>
         </div>
     </header>
-    <main class="clearfix">
+    <main id="portfolio" class="clearfix">
         <h2>Portfolio</h2>
         <div class="feat-container">
             <img class="feat-img" src="images/portfolio-1.png" alt="Marketing page graphic">
@@ -57,7 +58,7 @@
         </div>
     </main>
     <footer>
-        <div class="contact-container">
+        <div id="contact" class="contact-container">
             <h2>Contact</h2>
             <p>If you’re interested in chatting or want more information about what I’ve been working on, I’d love to hear from you.</p>
             <p>
@@ -67,14 +68,13 @@
                 <span class="contact-label">Email</span><a class="contact-info" href="mailto:">email@yoursite.com</a>
             </p>
         </div>
-        <hr>
         <div class="footer-links-container clearfix">
             <span class="footer-name">Student Name</span>
             <ul>
-                <li class="mobile"><a class="footer-link" href="#">Back To Top</a></li>
-                <li class="not-mobile"><a class="footer-link" href="#">Home</a></li>
-                <li class="not-mobile"><a class="footer-link" href="#">Portfolio</a></li>
-                <li class="not-mobile"><a class="footer-link" href="#">Contact</a></li>
+                <li class="mobile"><a class="footer-link" href="#top">Back To Top</a></li>
+                <li class="not-mobile"><a class="footer-link" href="#top">Home</a></li>
+                <li class="not-mobile"><a class="footer-link" href="#portfolio">Portfolio</a></li>
+                <li class="not-mobile"><a class="footer-link" href="#contact">Contact</a></li>
             </ul>
         </div>
     </footer>
